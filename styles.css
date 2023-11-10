@@ -1,0 +1,90 @@
+/* Estilos gerais para o corpo da página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgb(66, 66, 66), rgb(180, 180, 180), rgb(215, 215, 215), rgb(59, 59, 59));
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    font-size: 1.5vw;
+    margin: 1vw;
+    outline: outset rgb(0, 0, 0) 0.5vw;
+    border-radius: 100px;
+    padding: 1vw;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Estilos para a seção principal */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Estilos para cada seção com instruções Git */
+section {
+    outline: outset rgb(0, 0, 0) 0.5vw;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5vw;
+    margin: 0.5vw;
+    width: 25vw;
+    height: 22.5vh;
+    font-size: 0.9vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    text-align: justify;
+}
+
+/* Estilos para o rodapé */
+footer {
+    margin: 1vw;
+    padding: 0.5vw;
+    outline: outset rgb(0, 0, 0) 0.5vw;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Media query para telas menores */
+@media (max-width: 479px) {
+    header {
+        font-size: 3vw;
+    }
+
+    body {
+        overflow: scroll;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        width: 75vw;
+        font-size: 2.25vw;
+        margin: 2vw;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 4.25vw;
+    }
+}
+
+/* Efeito de hover para elementos filhos do corpo */
+body > *:hover {
+    transform: scale(1.030);
+    transition: 100ms linear;
+}
